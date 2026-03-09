@@ -82,7 +82,7 @@ For the full list of endpoints with parameters and response schemas, see [endpoi
 ## Critical Rules
 
 1. **Chain names use SCREAMING_SNAKE_CASE** — `ETH_MAINNET`, not `eth-mainnet`
-2. **WebSocket URL** — `wss://gr-staging-v2.streaming.covalenthq.com/graphql`
+2. **WebSocket URL** — `wss://streaming.goldrushdata.com/graphql`
 3. **Protocol header** — `Sec-WebSocket-Protocol: graphql-transport-ws`
 4. **Auth payload** — `{ "type": "connection_init", "payload": { "GOLDRUSH_API_KEY": "YOUR_KEY" } }`
 5. **Auth errors are deferred** — `connection_ack` always succeeds; auth errors only appear on subscription start

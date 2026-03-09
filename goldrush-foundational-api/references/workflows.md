@@ -127,7 +127,7 @@ This section covers common errors for frequently used endpoints.
 ### Wallet Activity Stream
 
 **1. WebSocket connection failed**
-- Solution: Verify URL (wss://gr-staging-v2.streaming.covalenthq.com/graphql) and auth header
+- Solution: Verify URL (wss://streaming.goldrushdata.com/graphql) and auth header
 - Example: Header: `Authorization: Bearer YOUR_API_KEY`
 
 **2. Subscription not receiving data**

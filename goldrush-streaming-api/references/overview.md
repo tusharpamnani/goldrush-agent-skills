@@ -4,7 +4,7 @@
 
 | Item | Value |
 |------|-------|
-| **WebSocket URL** | `wss://gr-staging-v2.streaming.covalenthq.com/graphql` |
+| **WebSocket URL** | `wss://streaming.goldrushdata.com/graphql` |
 | **Protocol** | GraphQL over WebSocket (`graphql-transport-ws`) |
 | **Authentication** | API key via `connection_init` payload as `GOLDRUSH_API_KEY` |
 | **SDK** | `@covalenthq/client-sdk` (TypeScript) |
@@ -200,7 +200,7 @@ client.StreamingService.subscribeToOHLCVTokens(
 ```typescript TypeScript (graphql-ws)
 import { createClient } from "graphql-ws";
 
-const CONNECTION_URL = "wss://gr-staging-v2.streaming.covalenthq.com/graphql";
+const CONNECTION_URL = "wss://streaming.goldrushdata.com/graphql";
 
 // Define your API key
 const API_KEY = "";
@@ -282,7 +282,7 @@ from gql.transport.websockets import WebsocketsTransport
 GOLDRUSH_API_KEY = ""
 
 # GraphQL WebSocket endpoint
-WS_URL = "wss://gr-staging-v2.streaming.covalenthq.com/graphql"
+WS_URL = "wss://streaming.goldrushdata.com/graphql"
 
 # Define the subscription query
 SUBSCRIPTION_QUERY = gql("""
@@ -338,7 +338,7 @@ asyncio.run(main())
 ```bash Terminal (websocat)
 ( echo '{"type":"connection_init","payload":{"GOLDRUSH_API_KEY":""}}'; \
   echo '{"type":"start","id":"1","payload":{"query":"subscription { ohlcvCandlesForToken(chain_name: BASE_MAINNET, token_addresses: [\"0x0b3e328455c4059EEb9e3f84b5543F74E24e7E1b\"], interval: ONE_MINUTE, timeframe: ONE_HOUR) { timestamp open high low close volume volume_usd quote_rate quote_rate_usd base_token { contract_name contract_address contract_decimals contract_ticker_symbol } } }"}}' \
-) | websocat --header="Sec-WebSocket-Protocol: graphql-ws" wss://gr-staging-v2.streaming.covalenthq.com/graphql | jq
+) | websocat --header="Sec-WebSocket-Protocol: graphql-ws" wss://streaming.goldrushdata.com/graphql | jq
 ```
 
 ## Response Format
@@ -460,7 +460,7 @@ For direct WebSocket connections, you can use a package like [graphql-ws](https:
 import { createClient } from "graphql-ws";
 
 const client = createClient({
-  url: "wss://gr-staging-v2.streaming.covalenthq.com/graphql",
+  url: "wss://streaming.goldrushdata.com/graphql",
   connectionParams: {
     GOLDRUSH_API_KEY: "YOUR_API_KEY_HERE", // Replace with your GoldRush API key
   },
@@ -488,7 +488,7 @@ For manual testing or debugging, [websocat](https://github.com/vi/websocat) can 
 
   
 ```
-websocat -H="Sec-WebSocket-Protocol: graphql-transport-ws" wss://gr-staging-v2.streaming.covalenthq.com/graphql
+websocat -H="Sec-WebSocket-Protocol: graphql-transport-ws" wss://streaming.goldrushdata.com/graphql
 ```
   
   

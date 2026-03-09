@@ -357,6 +357,8 @@ The UNIX `cutoff-timestamp` retrieves the token balance snapshot from the neares
 
 Balances presented in descending order of the fiat quote value for most major tokens. Minor tokens may be presented in descending order of their `last_transferred_at` timestamp.
 
+Rebasing tokens (e.g. stETH, aTokens, cTokens) are supported on [Foundational Chains](https://goldrush.dev/docs/chains/overview#foundational-chains).
+
 ---
 
 ## Get multichain & multiaddress transactions

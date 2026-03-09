@@ -366,7 +366,7 @@ fragment TypeRef on __Type {
 ## Streaming-Specific Troubleshooting
 
 ### WebSocket Connection Issues
-- Verify URL: `wss://gr-staging-v2.streaming.covalenthq.com/graphql`
+- Verify URL: `wss://streaming.goldrushdata.com/graphql`
 - Set protocol header: `Sec-WebSocket-Protocol: graphql-transport-ws`
 - Auth errors only surface on subscription start, not on WebSocket connect
 

@@ -358,6 +358,8 @@
 
 **Processing:** Realtime
 
+> **Note:** Rebasing tokens (e.g. stETH, aTokens, cTokens) are supported on [Foundational Chains](https://goldrush.dev/docs/chains/overview#foundational-chains).
+
 ---
 
 ## Get historical token balances for address
@@ -429,7 +431,9 @@
 
 **Processing:** Realtime
 
-> **Note:** Supported on all [Foundational Chains](https://goldrush.dev/chains/).
+> **Note:** Endpoint only supported on all [Foundational Chains](https://goldrush.dev/chains/).
+
+Rebasing tokens (e.g. stETH, aTokens, cTokens) also supported on [Foundational Chains](https://goldrush.dev/docs/chains/overview#foundational-chains).
 
 ---
 
@@ -567,6 +571,8 @@
 **Credit Cost:** 1 per call
 
 **Processing:** Realtime
+
+> **Note:** Rebasing tokens (e.g. stETH, aTokens, cTokens) are supported on [Foundational Chains](https://goldrush.dev/docs/chains/overview#foundational-chains).
 
 #### Related guides
 

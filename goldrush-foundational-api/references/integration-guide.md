@@ -649,7 +649,7 @@ The GoldRush Client SDK manages WebSocket reconnection automatically. If you're 
 import { createClient } from "graphql-ws";
 
 const client = createClient({
-  url: "wss://gr-staging-v2.streaming.covalenthq.com/graphql",
+  url: "wss://streaming.goldrushdata.com/graphql",
   connectionParams: {
     GOLDRUSH_API_KEY: "YOUR_API_KEY_HERE",
   },

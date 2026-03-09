@@ -1,7 +1,7 @@
 # Streaming API Endpoints
 
 ## Connection Details
-- **WebSocket:** `wss://gr-staging-v2.streaming.covalenthq.com/graphql`
+- **WebSocket:** `wss://streaming.goldrushdata.com/graphql`
 - **Protocol:** `graphql-transport-ws`
 - **Auth:** `GOLDRUSH_API_KEY` in `connection_init` payload
 
